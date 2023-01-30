@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project 2</title>
+  <link rel ="stylesheet" type="text/css" href="index.css">
+  <link rel ="stylesheet" type="text/css" href="project3.css">
+   
+    <script src="project3.js"></script>
+</head>
+<body>
+    <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+</head>
+<body>
+  <header>
+   <img  src = "C:\Users\uchej\Documents\GitHub\myweb\UchemUJ.jpg">
+  <h1>Uchem Johnfisher - Software Programming Portfolio</h1>
+   </header>
+
+<nav class = "navbar">
+  <nav>
+    <ul>
+    <li><a href="index.html">Home Page</a></li>
+   <li><a href="project1.html">Web Dev. Project</a></li> 
+    <li><a href="project3.html">Project 3</a></li>
+    </ul>
+  </nav>
+
+  <h2>My JavaScript Playground</h2>
+
+<div id="currentTime"></div>
+    <script>
+      const element = document.getElementById('currentTime');
+      
+      setInterval(function () {
+        const currentDate = new Date();
+        element.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+      }, 1000);
+    </script>
+  
+<div id="buttons">
+<p id= "text1">
+ <p id="text1"><strong>Buy from Vending Machine.</strong></p>
+<button onclick="chooseDrink()"><strong>Buy drinks</strong></button>
+
+ <p id="text1"><strong>Use The Calculator.</strong></p>
+<button  onclick="useCalculator()"><strong>Calculator</strong></button>
+
+ <p id="text1"><strong>Manage Your Sales Space Account.</strong></p>
+<button  onclick="accountTransactions() "><strong>Rent Payment</strong></button>
+
+ <p id="text1"><strong>Play Even or Odd Number Game.</strong></p>
+<button  onclick="isOddOrEvenNumber()"><strong>Play Game</strong></button>
+
+ <p id="text1"><strong>Temprature Converter.</strong></p>
+<button onclick="tempConversion()"><strong>Convert</strong></button>
+
+
+</p>
+</div>
+
+
+<button id="show-image-button">Next Movie Preview</button>
+   <img id="my-image" src= "C:\Users\uchej\Documents\GitHub\myweb\GIrlUnderRain.gif" style="display: none; width: 600px; height: 700px;">
+   <script>
+      const showImageButton = document.getElementById("show-image-button");
+      const myImage = document.getElementById("my-image"); 
+      showImageButton.addEventListener("click", () => { 
+         myImage.style.display = "block"; 
+      });
+   </script>
+
+  
+</body>
+</html>  
+
+
+
+
