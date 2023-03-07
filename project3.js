@@ -31,7 +31,7 @@ switch(favDrink) {
 //Function definition for purchasing from vending machine items
 function vendingMachine() {
 
-	let pick = prompt("Here are the drinks we got!\n" + "Enter 1. for Diet Coke\n" + "2. for Regular  Code\n" +
+	let pick = prompt("Here are the drinks we got!\n" + "Enter 1. for Diet Coke\n" + "2. for Regular  Coke\n" +
 		"3. for Bottled Water\n" + "0. to exit");
 
 	
