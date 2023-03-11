@@ -48,7 +48,7 @@ if (pick == 1 || pick == 2) {
 				payment = prompt("Please enter payment amount"); 
 				alert("You entered: $" + payment);
 				
-				if (payment > itemQuantity) {
+				else if (payment > itemQuantity) {
 				balance = payment - itemQuantity * 2;
 				alert("Your balance is: $" + balance + ".  Thank you!");
 				break;
