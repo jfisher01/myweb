@@ -49,6 +49,7 @@ function vendingMachine() {
 			
 				payment = prompt("Please enter payment amount"); 
 				alert("You entered: $" + payment);
+				break;
 
 			if (payment < itemQuantity * 2) {								//If - else if decision control statements flow for this function
 					alert("Please complete your payment");
