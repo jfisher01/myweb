@@ -32,7 +32,7 @@ switch(favDrink) {
 function vendingMachine() {
 
 	let pick = prompt("Here are the drinks we got!\n" + "Enter 1. for Diet Coke\n" + "2. for Regular  Coke\n" +
-		"3. for Bottled Water\n" + "0. to exit");
+			  "3. for Bottled Water\n" + "0. to exit");
 
 	
 	let itemQuantity = 0;
@@ -42,34 +42,36 @@ function vendingMachine() {
 	do {																	//Do - while loop for if - else if  decision control statements flow
 
 		if (pick == 1 || pick == 2) {
-			itemQuantity = prompt("How many cokes do you want ? ");
+			itemQuantity = prompt("How many cokes do you want ? $2 for one");
 																			//This gets quantity of items to be purchased
 
 				alert("Total price = $ " + itemQuantity * 2 );
 			
 				payment = prompt("Please enter payment amount"); 
 				alert("You entered: $" + payment);
-				break;
+				
 
 			if (payment < itemQuantity * 2) {								//If - else if decision control statements flow for this function
 					alert("Please complete your payment");
 					vendingMachine();
 					break;
-				}	
-			else if (payment > itemQuantity) {
+					}
+			
+				else if (payment > itemQuantity) {
 					balance = payment - itemQuantity * 2;
 					alert("Your balance is: $" + balance + ".  Thank you!");
-				break;
-				}
-			else if(payment == itemQuantity * 2) { 
+					break;
+					}
+			
+				else if(payment == itemQuantity * 2) { 
 					alert("Thank you for your petronage");
-				} 
-			else 
-						{
-					  alert("All payments must start from 1$");
-					  vendingMachine();
-					  break;
-						}
+					} 
+			
+				else {
+					alert("All payments must start from 1$");
+					vendingMachine();
+					break;
+					}
 					}
 
 
