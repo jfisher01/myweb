@@ -42,34 +42,34 @@ function vendingMachine() {
 			  "3. for Bottled Water\n" + "0. to exit");
 
 		
-	if (pick == 1 || pick == 2) {
+if (pick == 1 || pick == 2) {
 				itemQuantity = prompt("How many cokes do you want ? $2 for one");			//This gets quantity of items to be purchased
 				alert("Total price = $ " + itemQuantity * 2 );
 				payment = prompt("Please enter payment amount"); 
 				alert("You entered: $" + payment);
 				
 				if (payment > itemQuantity) {
-					balance = payment - itemQuantity * 2;
-					alert("Your balance is: $" + balance + ".  Thank you!");
-					break;
-					}
+				balance = payment - itemQuantity * 2;
+				alert("Your balance is: $" + balance + ".  Thank you!");
+				break;
+				}
 		
 				else if (payment < itemQuantity * 2) {								//If - else if decision control statements flow for this function
-					alert("Please complete your payment");
-					vendingMachine();
-					break;
-					}
+				alert("Please complete your payment");
+				vendingMachine();
+				break;
+				}
 			
 				else if(payment == itemQuantity * 2) { 
-					alert("Thank you for your petronage");
-					} 
+				alert("Thank you for your petronage");
+				} 
 			
 				else {
-					alert("All payments must start from 1$");
-					vendingMachine();
-					break;
-					}
-					}
+				alert("All payments must start from 1$");
+				vendingMachine();
+				break;
+				}
+			}
 
 else if (pick == 3)
 		{
