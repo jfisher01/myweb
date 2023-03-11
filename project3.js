@@ -31,16 +31,17 @@ switch(favDrink) {
 //Function definition for purchasing from vending machine items
 function vendingMachine() {
 
-	let pick = prompt("Here are the drinks we got!\n" + "Enter 1. for Diet Coke\n" + "2. for Regular  Coke\n" +
-			  "3. for Bottled Water\n" + "0. to exit");
-
+	
 	
 	let itemQuantity = 0;
 	let payment = 0;
 	let balance = 0;
 
 	do {																	//Do - while loop for if - else if  decision control statements flow
+		let pick = prompt("Here are the drinks we got!\n" + "Enter 1. for Diet Coke\n" + "2. for Regular  Coke\n" +
+			  "3. for Bottled Water\n" + "0. to exit");
 
+		
 		if (pick == 1 || pick == 2) {
 			itemQuantity = prompt("How many cokes do you want ? $2 for one");
 																			//This gets quantity of items to be purchased
@@ -50,7 +51,6 @@ function vendingMachine() {
 				payment = prompt("Please enter payment amount"); 
 				alert("You entered: $" + payment);
 				
-
 			if (payment < itemQuantity * 2) {								//If - else if decision control statements flow for this function
 					alert("Please complete your payment");
 					vendingMachine();
