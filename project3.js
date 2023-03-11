@@ -57,6 +57,7 @@ function vendingMachine() {
 				else if (payment > itemQuantity) {
 					balance = payment - itemQuantity * 2;
 					alert("Your balance is: $" + balance + ".  Thank you!");
+					balance ++;
 					break;
 					}
 			
